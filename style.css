@@ -1,0 +1,79 @@
+.slider {
+    width: 100%;
+    max-width: 900px;
+ }
+ 
+ .slider_slide {
+    width: 60vh;
+    position: relative;
+    left: 60%;
+ }
+ 
+ .slider_slide:first-child {
+    display: block;
+ }
+ 
+ .slider_slide > img {
+    width: 60%;
+    margin-top: 10px;
+ }
+ 
+ .slider_nav {
+    padding: 15px 5px;
+    color: #ccc;
+    font-weight: 600;
+    position: relative;
+    left: 65%;
+    cursor: pointer;
+    background: linear-gradient(120deg, green , royalblue); 
+ }
+ 
+ 
+ .slider_pagination_btn {
+    display: inline-block;
+    padding: 6px;
+    position: relative;
+    left: 70%;
+    cursor: pointer;
+    background: linear-gradient(120deg, green , royalblue); 
+    border: none;
+    outline: none;
+ }
+ .slider_pagination_btn:before {
+    content: '';
+    display: inline-block;
+    padding: 6px;
+    border-radius: 100%;
+    background-color: #ccc;
+ }
+ 
+ .slider_pagination_btn:hover:before {
+    background-color: #aaa;
+ }
+ 
+ .slider_pagination_btn:focus:before {
+    background-color: #777;
+ }
+ 
+ .slider_pagination_btn.slider_pagination_btn--sel:before {
+    background-color: black
+ }
+ 
+ 
+ .slider_progress-bar {
+    width: 100%;
+    height: 10px;
+    margin-left: 85px;
+    background-color: #eee;
+ }
+ 
+ .slider_progress-bar_bar {
+    width: 0;
+    height: 100%;
+    background: linear-gradient(120deg, royalblue, salmon);
+ }
+ 
+ .slider_progress-bar_bar--moving {
+    transition: 4s linear;
+    width: 100%;
+ }
